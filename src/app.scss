@@ -1,0 +1,14 @@
+$bg-color: purple;
+
+.headingStyle {
+  background-color: $bg-color;
+  color: white;
+  font-size: 3rem;
+  text-align: center;
+  padding: 15px;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+}
