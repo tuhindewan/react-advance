@@ -1,14 +1,7 @@
-import { useState } from 'react';
 import Delete from '../icons/Delete';
 import './card.scss';
 
 function Card( props ) {
-
-    const [text, setText] = useState("")
-
-    const handleChange = (event) => {
-        setText( event.target.value )
-    }
 
     return (
 
@@ -18,10 +11,6 @@ function Card( props ) {
                 <p className='cardDesc'>{ props.description }</p>
                 <p className='cardFooter'>Card Desc</p>
                 <Delete />
-            </div>
-            <p>{ text }</p>
-            <div>
-                <input type='text' onChange={handleChange} />
             </div>
         </div> 
     )
